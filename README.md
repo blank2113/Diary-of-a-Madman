@@ -1,64 +1,58 @@
-## 🗺️ Repository Structure & Technologies
+## 🗺️ Структура репозитория и технологии
 
-This repository serves as a comprehensive roadmap and hands-on guide to the entire Node.js backend ecosystem. Inside, you will find practical code examples, architectural breakdowns, and my personal insights for each of the following sections:
-
-# 🌍 English | [Русский](README-RU.md)
+Этот репозиторий служит подробной дорожной картой и практическим руководством по всей бэкенд-экосистеме Node.js. Внутри вы найдете практические примеры кода, разбор архитектурных решений и мои личные выводы для каждого из следующих разделов:
 
 ---
 
-### 📑 Sections Overview
+### 📑 Обзор разделов
 
 ---
 
-*   **🛜 Connection Protocols**
-    *   **HTTP/HTTPS:** Deep dive into request/response lifecycle, status codes, custom headers, cookies, and session state.
-    *   **HTTP/1.1 vs. HTTP/2 vs. HTTP/3:** Understanding multiplexing, head-of-line blocking, and connection pooling.
-    *   **Network Security:** Configuring SSL/TLS certificates, handling CORS, implementing CSP (Content Security Policy), and HSTS.
-    *   **Real-Time & RPC:** Bidirectional communication via WebSockets (WS/WSS) and high-performance RPC using gRPC.
+*   **🛜 Протоколы соединения (Connection Protocols)**
+    *   **HTTP/HTTPS:** Глубокое погружение в жизненный цикл запроса и ответа, коды статусов, кастомные заголовки, куки (cookies) и управление сессиями.
+    *   **HTTP/1.1 против HTTP/2 против HTTP/3:** Разбор мультиплексирования, проблемы Head-of-Line Blocking и пулинга соединений.
+    *   **Сетевая безопасность:** Настройка SSL/TLS сертификатов, работа с CORS, внедрение CSP (Content Security Policy) и HSTS.
+    *   **Real-Time и RPC:** Двунаправленная связь через WebSockets (WS/WSS) и высокопроизводительный RPC с использованием gRPC.
 ---
 
 *   **💻 JavaScript + TypeScript**
-    *   Advanced JS (Closures, Prototypes, Asynchrony, Event Loop in V8).
-    *   TypeScript type system (Generics, Interfaces, Utility types, Decorators).
+    *   Продвинутый JS (Замыкания, Прототипы, Асинхронность, Event Loop внутри движка V8).
+    *   Система типов TypeScript (Generics, Интерфейсы, Utility types, Декораторы).
 ---
-*   **🟢 Node.js Core**
-    *   Deep dive into `libuv` (Phases of the Event Loop, ThreadPool mechanics).
-    *   Core modules (`fs`, `path`, `stream`, `buffer`, `cluster`, `worker_threads`).
-    *   Memory management, profiling, and handling heavy CPU-bound tasks.
+*   **🟢 Ядро Node.js (Node.js Core)**
+    *   Глубокое погружение в `libuv` (Фазы Event Loop, механизмы работы ThreadPool).
+    *   Встроенные модули (`fs`, `path`, `stream`, `buffer`, `cluster`, `worker_threads`).
+    *   Управление памятью, профилирование и обработка тяжелых CPU-bound задач.
 ---
-*   **🌐 Connection Protocols**
-    *   Traditional web protocols: HTTP/1.1, HTTP/2, and HTTPS configuration.
-    *   Real-time and bidirectional communication: WebSockets (WS/WSS) and gRPC.
+*   **🚀 Бэкенд-фреймворки (Backend Frameworks)**
+    *   Продакшен-фреймворки: Express.js, Fastify и NestJS.
+    *   Архитектура API: RESTful роутинг, GraphQL (схемы, резолверы) и проектирование Middleware.
 ---
-*   **🚀 Backend Frameworks**
-    *   Production-ready frameworks: Express.js, Fastify, and NestJS.
-    *   API architectures: RESTful routing, GraphQL (schemas, resolvers), and Middleware design.
+*   **🗄️ Базы данных и кэширование (Databases & Caching)**
+    *   Реляционные базы данных (PostgreSQL) и NoSQL (MongoDB) в связке с ORM/ODM (Prisma, Mongoose, TypeORM).
+    *   Кэширование, менеджмент сессий и ограничение запросов (rate limiting) с помощью Redis.
 ---
-*   **🗄️ Databases & Caching**
-    *   Relational databases (PostgreSQL) and NoSQL (MongoDB) with ORMs/ODMs (Prisma, Mongoose, TypeORM).
-    *   Caching, session management, and rate limiting using Redis.
+*   **📐 Подходы и шаблоны проектирования (Architectural Approaches & Design Patterns)**
+    *   Принципы проектирования ПО: SOLID, DRY, KISS и Чистая Архитектура (Clean Architecture).
+    *   Паттерны проектирования (Factory, Singleton, Repository, Dependency Injection).
+    *   Проектирование систем (System Design): Монолит против Микросервисов, Событийно-ориентированная архитектура (EDA).
 ---
-*   **📐 Architectural Approaches & Design Patterns**
-    *   Software design principles: SOLID, DRY, KISS, and Clean Architecture.
-    *   Design patterns (Factory, Singleton, Repository, Dependency Injection).
-    *   System design: Monolith vs. Microservices, Event-Driven Architecture (EDA).
+*   **🐧 Linux администрирование (Linux Administration)**
+    *   Написание скриптов автоматизации (Bash), управление процессами и мониторинг серверов.
+    *   Настройка **Nginx** в качестве Reverse Proxy, балансировщика нагрузки и шлюза для SSL-терминации.
 ---
-*   **🐧 Linux Administration**
-    *   Shell scripting (Bash), process control, and server monitoring.
-    *   Setting up **Nginx** as a reverse proxy, load balancer, and SSL termination gate.
----
-*   **🐳 Docker & Containerization**
-    *   Writing optimized Multi-stage `Dockerfiles` for Node.js apps.
-    *   Managing multi-container environments using `docker-compose`.
+*   **🐳 Docker и контейнеризация (Docker & Containerization)**
+    *   Написание оптимизированных Multi-stage `Dockerfiles` для Node.js приложений.
+    *   Управление многоконтейнерными средами с помощью `docker-compose`.
 ---    
 *   **☸️ Kubernetes (K8s)**
-    *   Orchestrating containerized services (Pods, Deployments, Services, Ingress).
-    *   Configuring autoscaling, environment variables, and config maps.
+    *   Оркестрация контейнеризированных сервисов (Pods, Deployments, Services, Ingress).
+    *   Настройка авто масштабирования (autoscaling), переменных окружения и config maps.
 ---    
-*   **🔄 CI/CD Pipelines**
-    *   Automating testing, linting, and deployment using GitHub Actions / GitLab CI.
-    *   Implementation of continuous integration and delivery loops.
+*   **🔄 CI/CD конвейеры (CI/CD Pipelines)**
+    *   Автоматизация тестирования, линтинга и деплоя с помощью GitHub Actions / GitLab CI.
+    *   Реализация процессов непрерывной интеграции и доставки (CI/CD).
 
 ---
 
-> 🧠 **Note:** Every directory contains specific code challenges along with my **personal conclusions**, architectural trade-offs, and optimization notes based on real-world scenarios.
+> 🧠 **Примечание:** Каждая директория содержит конкретные практические задачи, а также мои **личные выводы**, разбор архитектурных компромиссов и заметки по оптимизации на основе реальных сценариев.
