@@ -1,9 +1,21 @@
 ## 🗺️ Repository Structure & Technologies
 
 This repository serves as a comprehensive roadmap and hands-on guide to the entire Node.js backend ecosystem. Inside, you will find practical code examples, architectural breakdowns, and my personal insights for each of the following sections:
+
+# 🌍 English | [Русский](README-RU.md)
+
 ---
 
 ### 📑 Sections Overview
+
+---
+
+*   **🛜 Connection Protocols**
+    *   **HTTP/HTTPS:** Deep dive into request/response lifecycle, status codes, custom headers, cookies, and session state.
+    *   **HTTP/1.1 vs. HTTP/2 vs. HTTP/3:** Understanding multiplexing, head-of-line blocking, and connection pooling.
+    *   **Network Security:** Configuring SSL/TLS certificates, handling CORS, implementing CSP (Content Security Policy), and HSTS.
+    *   **Real-Time & RPC:** Bidirectional communication via WebSockets (WS/WSS) and high-performance RPC using gRPC.
+---
 
 *   **💻 JavaScript + TypeScript**
     *   Advanced JS (Closures, Prototypes, Asynchrony, Event Loop in V8).
