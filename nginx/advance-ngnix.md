@@ -1,5 +1,7 @@
 [Назад к главному файлу 🗂️](../README.md)
-[Назад к Сети](./networks.md)  
+
+[Назад к Сети](../networks/networks.md)  
+
 [Назад к ngnix](./nginx.md)
 
 # 🚀 **Продвинутый Nginx: Оптимизация, Микросервисы и Подкапотная Магия**
@@ -275,6 +277,9 @@ server {
 
 ## [Защиты на уровни Nginx](./protections-ngnix.md)
 
+
 [Назад к главному файлу 🗂️](../README.md)
-[Назад к Сети](./networks.md)  
+
+[Назад к Сети](../networks/networks.md)  
+
 [Назад к ngnix](./nginx.md)
