@@ -15,7 +15,9 @@
 ## **Nginx**
 
   * **[Nginx - Архитектура, Проксирование и Оптимизация](./nginx/nginx.md)**
+
   * **[Продвинутый Nginx](./nginx/advance-ngnix.md)**
+  
   * **[Защита от DDoS, таймауты и буферы в Nginx](./nginx/protections-ngnix.md)**
 
 --- 
