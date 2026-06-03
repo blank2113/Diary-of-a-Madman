@@ -20,4 +20,7 @@ const httpServer = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'application/json' });
   res.end(JSON.stringify({ success: true }));
 });
-httpServer.listen(3000);
+httpServer.listen(3000, () => {
+  console.log(`Server starts on ${3000}`);
+
+});
